@@ -97,7 +97,7 @@ ul {
 	font-weight: 300;
     margin-right: 5rem;
 }
-button {
+.introduction button {
     width: 9.688rem;
     background-color: #452065;
     border-color: #452065;
@@ -113,20 +113,12 @@ button {
 .cases{
     /*background-color: #ffffff;*/
     overflow: hidden;
-    padding-bottom: 5rem;
-}
-.cases .caption{
-    color: #ffffff;
-    background-color: #452065;
-    height: 
+    padding-bottom: 3rem;
+    padding-top: 3rem;
 }
 .cases .devices {
     width: 100%;
     display: inline-block;
-    /* styles to assist with debugging */
-    /*border: 1px solid black;*/
-    box-sizing: border-box;
-    /*height: 4em;*/
     margin: 0;
     padding: 0;
     border-color: #452065;
@@ -141,6 +133,18 @@ button {
     border-style: none;
     border-radius: 4px;
 }
+.question button{
+    width: 280px;
+    background-color: #452065;
+    border-color: #452065;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+    opacity: 0.75;
+}
 .services{
     background-image: url('../images/services.jpg');
     background-repeat: no-repeat;
@@ -148,6 +152,18 @@ button {
     height:400px;
     border-style: none;
     border-radius: 4px;
+}
+.services button{
+    width: 280px;
+    background-color: #5E2A8A;
+    border-color: #5E2A8A;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+    opacity: 0.75;
 }
 .locations{
     background-image: url('../images/locations.jpg');
@@ -157,6 +173,18 @@ button {
     border-style: none;
     border-radius: 4px;
 }
+.locations button{
+    width: 280px;
+    background-color: #7E37BA;
+    border-color: #7E37BA;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+    opacity: 0.75;
+}
 .patients{
     background-image: url('../images/patients.jpg');
     background-repeat: no-repeat;
@@ -165,8 +193,53 @@ button {
     border-style: none;
     border-radius: 4px;
 }
+.patients button{
+    width: 280px;
+    background-color: #9A42E5;
+    border-color: #9A42E5;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+    opacity: 0.75;
+}
 .cases .devices > li {
     /*width: 33.3333333%;*/
     display: inline-block;
     padding: 0 0.5rem;
+}
+footer {
+    background-color: #452065;
+    height: 20rem;
+}
+/*.footer-content{
+    width: 1000px;
+    margin: auto;
+}*/
+.footer-content li{
+    display: inline-block; 
+    vertical-align: top;
+    padding:0.5rem 5rem;
+}
+.footer-content h3,
+.footer-content h4{
+    line-height: 20%;
+    color:#CC9BF0;
+}
+.footer-content p{
+    color:#ffffff;
+}
+.resources-links li{
+    display: block;
+    color: #fff;
+    padding:0;
+}
+.resources-links li:hover{
+    color:#1F0F2C;
+}
+.footer-contact-box li{
+    display:inline-block;
+    padding:0 2rem 0 0;
 }
