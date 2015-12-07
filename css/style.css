@@ -1,0 +1,137 @@
+html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+body {
+    background-color: LightGray;
+    font-family: 'Voltaire', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.content {
+	/*width: 30rem;*/
+	padding: 0 0.938rem;
+	margin: 0 auto;
+	min-width: 37.5rem;
+	text-align: center;
+}
+h2 {
+	display: block;
+	-webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+/* Navigation Section */
+.top-navigation {
+	background-color: #ffffff;
+	position: fixed;
+	width: 100%;
+	border-bottom: 1px solid #DDD;
+	z-index: 9999;
+}
+.top-navigation > .content {
+    height: 6rem;
+    width: 60em;
+    margin:auto;
+}
+.top-navigation .logo {
+    height: 4.375rem;
+    float: left;
+    margin: 1rem;
+ }
+.top-navigation .links {
+	float:right;
+	/*font-family: 'Roboto', sans-serif;*/
+    color: #838994;
+    font-size: 1.04rem;
+	margin-top: 2.5rem;
+}
+.top-navigation .links li{
+	display: inline-block;
+	margin-left: 1.563em;
+}
+.top-navigation .links .active {
+    color: #4c5058;
+    font-weight: 500;
+}
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #452065;
+}
+/* Introduction Section */
+.intrduction .content{
+    background-color: #ffffff
+}
+.introduction {
+	background-image: url('../images/running.jpg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 35rem;
+	/*width: 100%;*/
+	overflow: auto;	
+}
+
+.introduction h1 {
+	margin-top: 15rem;
+	font-size:3rem;
+    line-height: 20%;
+}
+.introduction h3{
+	margin-top: 1.25rem;
+	font-size: 2rem;
+}
+.introduction h1,
+.introduction h3{
+	color: #ffffff;
+	text-align: right;
+	font-weight: 300;
+    margin-right: 5rem;
+}
+button {
+    width: 9.688rem;
+    background-color: #452065;
+    border-color: #452065;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+    float: right;
+    margin-right: 5rem;
+}
+.cases{
+    /*background-color: #ffffff;*/
+    overflow: hidden;
+    padding-bottom: 5rem;
+}
+.cases h3{
+    color: #ffffff;
+    background-color: #452065;
+    height: 3rem;
+}
+.cases .devices {
+    width: 100%;
+    display: inline-block;
+    /* styles to assist with debugging */
+    /*border: 1px solid black;*/
+    box-sizing: border-box;
+    height: 4em;
+    margin: 0;
+    padding: 0;
+}
+.cases .devices > li {
+    /*width: 33.3333333%;*/
+    display: inline-block;
+    padding: 0 0.5rem;
+}
