@@ -1,0 +1,123 @@
+html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+body {
+    background-color: LightGray;
+    font-family: 'Voltaire', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.content {
+    /*width: 30rem;*/
+    padding: 0 0.938rem;
+    margin: 0 auto;
+    min-width: 37.5rem;
+    text-align: center;
+}
+h2 {
+    display: block;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    color: #452065;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+/* Navigation Section */
+.top-navigation {
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #DDD;
+    z-index: 9999;
+}
+.top-navigation > .content {
+    height: 6rem;
+    width: 60em;
+    margin:auto;
+}
+.top-navigation .logo {
+    height: 4.375rem;
+    float: left;
+    margin: 1rem;
+ }
+.top-navigation .links {
+    float:right;
+    /*font-family: 'Roboto', sans-serif;*/
+    color: #838994;
+    font-size: 1.04rem;
+    margin-top: 2.5rem;
+}
+.top-navigation .links li{
+    display: inline-block;
+    margin-left: 1.563em;
+}
+.top-navigation .links .active {
+    color: #4c5058;
+    font-weight: 500;
+
+}
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #452065;
+}
+/*Map Section*/
+main {
+    width: 100%;
+    padding: 7em 2em 2em 2em;
+}
+.raleigh,
+.cary {
+   /*position: fixed;*/
+   width: 40%;
+   /* height: auto; */
+   /* display: inline-block; */
+   float: left;
+}
+#map,
+#secondMap { 
+    width: 500px;
+    height: 380px;
+    margin: 2rem 2rem 2rem 0;
+    border: 5px solid white;
+}
+
+/*Footer Section*/
+footer {
+    background-color: #452065;
+    height: 20rem;
+    clear: both;
+}
+.footer-content li{
+    display: inline-block; 
+    vertical-align: top;
+    padding:0.5rem 5rem;
+}
+.footer-content h3,
+.footer-content h4{
+    line-height: 20%;
+    color:#CC9BF0;
+}
+.footer-content p{
+    color:#ffffff;
+}
+.resources-links li{
+    display: block;
+    color: #fff;
+    padding:0;
+}
+.resources-links li:hover{
+    color:#1F0F2C;
+}
+.footer-contact-box li{
+    display:inline-block;
+    padding:0 2rem 0 0;
+}

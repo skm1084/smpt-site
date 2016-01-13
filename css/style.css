@@ -5,67 +5,131 @@ html{
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    box-sizing: border-box;
+    height:0px;
 }
 body {
     background-color: LightGray;
     font-family: 'Voltaire', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin:0;
 }
 .content {
-	/*width: 30rem;*/
-	padding: 0 0.938rem;
-	margin: 0 auto;
-	min-width: 37.5rem;
-	text-align: center;
+    /*width: 30rem;*/
+    padding: 0 0.938rem;
+    margin: 0 auto;
+    min-width: 37.5rem;
+    text-align: center;
 }
 h2 {
-	display: block;
-	-webkit-margin-before: 0.83em;
+    display: block;
+    -webkit-margin-before: 0.83em;
     -webkit-margin-after: 0.83em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
+}
+a { 
+    text-decoration: none; 
 }
 ul {
     list-style: none;
     padding-left: 0;
 }
-/* Navigation Section */
-.top-navigation {
-	background-color: #ffffff;
-	position: fixed;
-	width: 100%;
-	border-bottom: 1px solid #DDD;
-	z-index: 9999;
+#primary_nav_wrap
+{
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #DDD;
+    z-index: 9999;
 }
-.top-navigation > .content {
+}
+#primary_nav_wrap > .content {
     height: 6rem;
     width: 60em;
-    margin:auto;
+    margin-top:auto;
 }
-.top-navigation .logo {
+#primary_nav_wrap .logo {
     height: 4.375rem;
     float: left;
     margin: 1rem;
- }
-.top-navigation .links {
-	float:right;
-	/*font-family: 'Roboto', sans-serif;*/
+     }
+#primary_nav_wrap ul
+{
+    list-style:none;
+    position:relative;
+    float:right;
     color: #838994;
+    font-family: 'Voltaire', sans-serif;
     font-size: 1.04rem;
-	margin-top: 2.5rem;
+    padding-right: 4rem;
+    padding-top: 1rem;
 }
-.top-navigation .links li{
-	display: inline-block;
-	margin-left: 1.563em;
+
+#primary_nav_wrap ul a
+{
+    display:block;
+    color: #452065;
+    font-family: 'Voltaire', sans-serif;
+    font-size: 1.04rem;
+    text-decoration:none;
+    line-height:32px;
+    padding:0 15px;
 }
-.top-navigation .links .active {
-    color: #4c5058;
-    font-weight: 500;
+
+#primary_nav_wrap ul li
+{
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0
 }
-.top-navigation .links li:hover {
+
+#primary_nav_wrap ul li.current-menu-item
+{
+    background: #F9F9F9;
+    border-radius: 5px;
+}
+
+#primary_nav_wrap ul li:hover
+{
+    background:#f2f2f2;
     cursor: pointer;
     color: #452065;
+    border-radius: 5px;
+}
+
+#primary_nav_wrap ul ul
+{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#fff;
+    padding:0;
+    border-radius: 5px;
+}
+
+#primary_nav_wrap ul ul li
+{
+    float:none;
+    width:200px
+}
+
+#primary_nav_wrap ul ul a
+{
+    line-height:120%;
+    padding:10px 15px
+}
+
+#primary_nav_wrap ul ul ul
+{
+    top:0;
+    left:100%
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+    display:block
 }
 /* Introduction Section */
 .intrduction .content{
@@ -210,14 +274,12 @@ ul {
     display: inline-block;
     padding: 0 0.5rem;
 }
+/*Footer Section*/
 footer {
     background-color: #452065;
     height: 20rem;
+    clear: both;
 }
-/*.footer-content{
-    width: 1000px;
-    margin: auto;
-}*/
 .footer-content li{
     display: inline-block; 
     vertical-align: top;
